@@ -1,4 +1,4 @@
-<div class="p-8 max-w-8xl mx-auto justify-center">
+<div class="p-8 max-w-8xl mx-auto">
 	<slot />
 </div>
 

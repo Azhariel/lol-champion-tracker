@@ -2,7 +2,7 @@ import { writable } from 'svelte/store'
 import type { Writable } from 'svelte/store'
 import champions from '../data/champions.json'
 
-interface Champion {
+export interface Champion {
 	codename: string
 	name: string
 }
