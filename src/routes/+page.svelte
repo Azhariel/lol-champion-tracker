@@ -1,4 +1,5 @@
 <script lang="ts">
+	import autoAnimate from '@formkit/auto-animate'
 	import ChampionPortrait from '../../components/ChampionPortrait.svelte'
 	import { championStore, type Champion } from '../../stores/ChampionStore.js'
 	let searchTerm: string = ''
@@ -28,7 +29,7 @@
 		bind:value={searchTerm}
 	/>
 </div>
-<div class="flex gap-4 flex-wrap justify-center">
+<div class="flex gap-4 flex-wrap justify-center" use:autoAnimate>
 	{#each filteredChampions as champion}
 		<ChampionPortrait name={champion.name} srcName={champion.codename} />
 	{/each}
