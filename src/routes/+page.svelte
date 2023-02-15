@@ -7,21 +7,10 @@
 	<title>LoL Champion Challenge</title>
 	<meta name="description" content="A test app for the LoL Champion Challenge" />
 </svelte:head>
-<h1>LoL Champion Challenge</h1>
+<h1 class="text-4xl text-center my-8 uppercase">LoL Champion Challenge</h1>
 
-<div class="gallery">
+<div class="flex gap-4 flex-wrap justify-center">
 	{#each $championStore as champion}
 		<ChampionPortrait name={champion.name} srcName={champion.codename} />
 	{/each}
 </div>
-
-<style>
-	.gallery {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
-	h1 {
-		text-align: center;
-	}
-</style>
