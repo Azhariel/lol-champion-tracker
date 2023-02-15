@@ -1,6 +1,8 @@
-<div class="p-8 max-w-8xl mx-auto bg-slate-900 text-gray-100">
-	<slot />
-</div>
+<body class="bg-slate-900">
+	<div class="p-8 max-w-8xl mx-auto text-gray-100 h-screen">
+		<slot />
+	</div>
+</body>
 
 <style>
 	@tailwind base;
