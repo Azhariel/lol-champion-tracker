@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ChampionPortrait from '../../components/ChampionPortrait.svelte'
-	import champions from '../../data/champions.json'
+	import { championStore } from '../../stores/ChampionStore.js'
+	console.log($championStore)
 </script>
 
 <svelte:head>
@@ -10,8 +11,8 @@
 <h1>LoL Champion Challenge</h1>
 
 <div class="gallery">
-	{#each Object.keys(champions) as champion}
-		<ChampionPortrait name={champions[champion].name} srcName={champion} />
+	{#each $championStore as champion}
+		<ChampionPortrait name={champion.name} srcName={champion.codename} />
 	{/each}
 </div>
 
