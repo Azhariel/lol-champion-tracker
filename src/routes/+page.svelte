@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ChampionPortrait from '../../components/ChampionPortrait.svelte'
 	import { championStore } from '../../stores/ChampionStore.js'
-	console.log($championStore)
 </script>
 
 <svelte:head>
