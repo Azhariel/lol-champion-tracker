@@ -27,6 +27,7 @@
 		type="text"
 		placeholder="Search Champions"
 		bind:value={searchTerm}
+		autofocus
 	/>
 </div>
 <div class="flex gap-4 flex-wrap justify-center" use:autoAnimate>
