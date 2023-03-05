@@ -19,9 +19,9 @@
 
 <svelte:head>
 	<title>LoL Champion Challenge</title>
-	<meta name="description" content="A test app for the LoL Champion Challenge" />
+	<meta name="description" content="League of Legends Champion Tracker for completion challenges" />
 </svelte:head>
-<h1 class="text-4xl text-center my-8 uppercase">LoL Champion Challenge</h1>
+<h1 class="text-4xl text-center my-8 uppercase font-title">LoL Champion Challenge</h1>
 <div class="flex items-center flex-col">
 	<input
 		class="bg-slate-700 border-slate-500 m-8 w-5/6 rounded-md text-lg p-4 border-2"
