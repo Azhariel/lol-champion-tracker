@@ -1,5 +1,7 @@
 <script>
 	import '../Tailwind.css'
+	import beaufortFont from '../../static/BeaufortforLOL-Regular.otf'
+	import spiegelFont from '../../static/Spiegel-Regular.otf'
 </script>
 
 <body class="bg-grey-600">
@@ -24,5 +26,15 @@
 		background-color: var(--secondary);
 		border-radius: 14px;
 		border: 3px solid var(--primary);
+	}
+
+	@font-face {
+		font-family: 'Spiegel';
+		src: url('/Spiegel-Regular.otf') format('opentype');
+	}
+
+	@font-face {
+		font-family: 'Beaufort for LOL';
+		src: url('/BeaufortforLOL-Regular.otf') format('opentype');
 	}
 </style>

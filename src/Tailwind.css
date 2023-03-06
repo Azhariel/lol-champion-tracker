@@ -1,13 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'Spiegel';
-    src: url('/Spiegel-Regular.otf?url') format('opentype');
-}
-
-@font-face {
-    font-family: 'Beaufort for LOL';
-    src: url('/BeaufortforLOL-Regular.otf?url') format('opentype');
-}
