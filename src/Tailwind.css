@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: 'Spiegel';
-    src: url('./fonts/Spiegel-Regular.otf') format('opentype');
+    src: url('./public/fonts/Spiegel-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Beaufort for LOL';
-    src: url('./fonts/BeaufortforLOL-Regular.otf') format('opentype');
+    src: url('./public/fonts/BeaufortforLOL-Regular.otf') format('opentype');
 }
