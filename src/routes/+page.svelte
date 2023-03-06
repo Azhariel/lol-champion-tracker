@@ -23,6 +23,7 @@
 </svelte:head>
 <h1 class="text-4xl text-center my-8 uppercase font-title text-gold-400">LoL Champion Challenge</h1>
 <div class="flex items-center flex-col">
+	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		class="bg-grey-600 border-slate-500 m-8 w-5/6 rounded-md text-lg p-4 border-2"
 		type="text"
