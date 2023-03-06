@@ -21,7 +21,7 @@
 	<div class="w-[220px] h-[400px] rounded-xl overflow-hidden">
 		<div class="h-full overflow-hidden">
 			<img
-				src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{srcName}_0.jpg"
+				src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/{srcName}_0.jpg"
 				alt={name}
 				id={srcName}
 				on:click={handleClick}
