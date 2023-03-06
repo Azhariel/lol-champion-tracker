@@ -18,7 +18,7 @@
 </script>
 
 <div>
-	<div class="w-[220px] h-[400px] rounded-xl overflow-hidden">
+	<div class="w-[220px] h-[400px] rounded-xl overflow-hidden hover:cursor-pointer">
 		<div class="h-full overflow-hidden">
 			<img
 				src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/{srcName}_0.jpg"
