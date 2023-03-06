@@ -1,9 +1,8 @@
 <script>
-	import Tailwind from '../Tailwind.svelte'
+	import '../Tailwind.css'
 </script>
 
-<Tailwind />
-<body class="bg-slate-900">
+<body class="bg-grey-600">
 	<div class="p-8 max-w-8xl mx-auto text-gray-100 h-screen">
 		<slot />
 	</div>
