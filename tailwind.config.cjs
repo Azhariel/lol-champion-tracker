@@ -7,7 +7,9 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Spiegel', defaultTheme.fontFamily.sans],
-				title: ['"Beaufort for LOL"', defaultTheme.fontFamily.sans]
+				'sans-bold': ['Spiegel Bold', defaultTheme.fontFamily.sans],
+				title: ['"Beaufort for LOL"', defaultTheme.fontFamily.sans],
+				'title-bold': ['"Beaufort for LOL Bold"', defaultTheme.fontFamily.sans]
 			},
 			colors: {
 				blue: {
