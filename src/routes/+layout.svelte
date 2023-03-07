@@ -1,7 +1,9 @@
 <script>
 	import '../Tailwind.css'
 	import beaufortFont from '../../static/BeaufortforLOL-Regular.otf'
+	import beaufortBoldFont from '../../static/BeaufortforLOL-Bold.otf'
 	import spiegelFont from '../../static/Spiegel-Regular.otf'
+	import spiegelBoldFont from '../../static/Spiegel-Bold.otf'
 </script>
 
 <body class="bg-grey-600">
@@ -34,7 +36,17 @@
 	}
 
 	@font-face {
+		font-family: 'Spiegel Bold';
+		src: url('/Spiegel-Bold.otf') format('opentype');
+	}
+
+	@font-face {
 		font-family: 'Beaufort for LOL';
 		src: url('/BeaufortforLOL-Regular.otf') format('opentype');
+	}
+
+	@font-face {
+		font-family: 'Beaufort for LOL Bold';
+		src: url('/BeaufortforLOL-Bold.otf') format('opentype');
 	}
 </style>
