@@ -5,6 +5,8 @@
 	import { championStore, type Champion } from '../../stores/ChampionStore.js'
 	let searchTerm: string = ''
 	let filteredChampions: Champion[] = []
+	let onlyAvailable: boolean = false
+	let onlyCompleted: boolean = false
 
 	$: {
 		if (searchTerm) {
@@ -38,6 +40,8 @@
 	<Button
 		text="Random"
 		handleClick={() => {
+			onlyAvailable = false
+			onlyCompleted = false
 			const randomChampion = $championStore[Math.floor(Math.random() * $championStore.length)]
 			searchTerm = randomChampion.name
 		}}
@@ -45,24 +49,40 @@
 	<Button
 		text="Only Available"
 		handleClick={() => {
+			onlyAvailable = !onlyAvailable
+			if (onlyAvailable) {
+				onlyCompleted = false
+				filteredChampions = $championStore.filter(
+					(champion) => localStorage.getItem(champion.codename) !== 'true'
+				)
+			} else {
+				filteredChampions = [...$championStore]
+			}
 			searchTerm = ''
-			filteredChampions = $championStore.filter(
-				(champion) => localStorage.getItem(champion.codename) !== 'true'
-			)
 		}}
+		activated={onlyAvailable}
 	/>
 	<Button
 		text="Only Completed"
 		handleClick={() => {
+			onlyCompleted = !onlyCompleted
+			if (onlyCompleted) {
+				onlyAvailable = false
+				filteredChampions = $championStore.filter(
+					(champion) => localStorage.getItem(champion.codename) === 'true'
+				)
+			} else {
+				filteredChampions = [...$championStore]
+			}
 			searchTerm = ''
-			filteredChampions = $championStore.filter(
-				(champion) => localStorage.getItem(champion.codename) === 'true'
-			)
 		}}
+		activated={onlyCompleted}
 	/>
 	<Button
 		text="Reset"
 		handleClick={() => {
+			onlyAvailable = false
+			onlyCompleted = false
 			searchTerm = ''
 			filteredChampions = [...$championStore]
 		}}
